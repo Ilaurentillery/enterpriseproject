@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.animalfinder.dto.BreedDTO;
-import com.animalfinder.service.BreedServiceStub;
+import com.animalfinder.service.IBreedService;
 
 @Controller
 public class AnimalFinderController {
 
 	
 	@Autowired
-	private BreedServiceStub breedServiceStub;
+	private IBreedService breedServiceStub;
 	
 	@RequestMapping("/start")
 	public String start() {
