@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwww.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>Animal Upload Page</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<h1>Animal Upload Page</h1>
+<br/>
+<h2>Your animal is:</h2>
+<p th:text="${AnimalDTO}"/>
+<br/>
+<body>
+<form action="#" th:action="@{/saveAnimal}" th:object = "${AnimalDTO}" method = "GET">
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name = "breed" th:field="*{breed}">
+</div>
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+  </div>
+ <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name = "species" th:field="*{species}">
+</div>
+ <div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+  </div>
+ <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name = "gender" th:field="*{gender}">
+</div>
+   <div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+  </div>
+ <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name = "shelter" th:field="*{shelter}">
+</div>
+ <div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+  </div>
+ <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name = "name" th:field="*{name}">
+</div>
+   <div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+  </div>
+ <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name = "genus" th:field="*{genus}">
+</div>
+ <button name="submit" type="submit" value="0">Submit</button>
+</form>
+</body>
+</html>

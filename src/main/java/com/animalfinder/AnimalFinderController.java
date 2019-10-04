@@ -2,9 +2,12 @@ package com.animalfinder;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.animalfinder.dto.AnimalDTO;
 import com.animalfinder.dto.BreedDTO;
 import com.animalfinder.service.IBreedService;
 
@@ -24,4 +27,12 @@ public class AnimalFinderController {
 		BreedDTO breedDTO = breedServiceStub.fetchByID(43);
 		return "start";
 	}
+	
+	@RequestMapping("/animalUpload")
+	public String animalUpload() 
+	{
+		return "animalUpload";
+	}
+	
+	
 }
