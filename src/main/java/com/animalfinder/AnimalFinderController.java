@@ -34,5 +34,11 @@ public class AnimalFinderController {
 		return "animalUpload";
 	}
 	
+	@RequestMapping("/error")
+	public String error() {
+		
+		return "start";
+	}
+	
 	
 }
