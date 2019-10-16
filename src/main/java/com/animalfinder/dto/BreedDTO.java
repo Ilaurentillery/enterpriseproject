@@ -7,7 +7,7 @@ public class BreedDTO {
 	private String longitude;
 	
 	public int getBreedId() {
-		return BreedID;
+		return BreedId;
 	}
 	public void setBreedId(int sbreedId) {
 		this.BreedId = sbreedId;
