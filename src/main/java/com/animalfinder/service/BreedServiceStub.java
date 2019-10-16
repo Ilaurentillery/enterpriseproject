@@ -14,7 +14,7 @@ public class BreedServiceStub implements IBreedService {
 	@Override
 	public BreedDTO fetchByID(int id) {
 		BreedDTO breedDTO = new BreedDTO();
-		breedDTO.setBreedID(43);
+		breedDTO.setBreedId(43);
 		return breedDTO;
 	}
 	@Override
