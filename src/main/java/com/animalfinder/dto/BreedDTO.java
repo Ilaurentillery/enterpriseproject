@@ -2,15 +2,15 @@ package com.animalfinder.dto;
 
 public class BreedDTO {
 
-	private int BreedID;
+	private int BreedId;
 	private String latitude;
 	private String longitude;
 	
-	public int getBreedID() {
+	public int getBreedId() {
 		return BreedID;
 	}
-	public void setBreedID(int sbreedID) {
-		this.BreedID = sbreedID;
+	public void setBreedId(int sbreedId) {
+		this.BreedId = sbreedId;
 	}
 	public String getLatitude() {
 		return latitude;
