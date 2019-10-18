@@ -25,16 +25,16 @@ public class BreedServiceTest {
 	IBreedService breedService;
 	List<AnimalDTO> animal;
 	
-	
+	//added an "o" to fetchBreed_ValidateNoResultsForJunkData()
 	@Test
-	public void fetchBreed_validateNoResultsForJunkData() {
+	public void fetchBreed_ValidateNoResultsForJunkData() {
 		givenUserISLoggedInToAnimalFinder();
 		whenTheUserSearchesForJunk();	
 		thenAnimalFinderReturnsNoResults();
 		
 		
 	}
-
+	//changed naming convention of this method
 	private void givenUserIsLoggedIntoAnimalFinder() {
 		
 		
