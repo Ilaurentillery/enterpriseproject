@@ -10,7 +10,7 @@ import com.animalfinder.dto.BreedDTO;
 
 @Component
 public class BreedServiceStub implements IBreedService {
-
+	//I like using ID for each breed of animal
 	@Override
 	public BreedDTO fetchByID(int id) {
 		BreedDTO breedDTO = new BreedDTO();
