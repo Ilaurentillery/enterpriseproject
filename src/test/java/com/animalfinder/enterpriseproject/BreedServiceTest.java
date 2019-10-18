@@ -27,20 +27,20 @@ public class BreedServiceTest {
 	
 	
 	@Test
-	public void fetchBreed_validateNoRsultsForJunkData() {
+	public void fetchBreed_validateNoResultsForJunkData() {
 		givenUserISLoggedInToAnimalFinder();
-		whenTheUserSearchesFrJunk();	
+		whenTheUserSearchesForJunk();	
 		thenAnimalFinderReturnsNoResults();
 		
 		
 	}
 
-	private void givenUserISLoggedInToAnimalFinder() {
+	private void givenUserIsLoggedIntoAnimalFinder() {
 		
 		
 	}
 
-	private void whenTheUserSearchesFrJunk() {
+	private void whenTheUserSearchesForJunk() {
 		animal = breedService.fetchAnimals("corgie");
 		
 	}
