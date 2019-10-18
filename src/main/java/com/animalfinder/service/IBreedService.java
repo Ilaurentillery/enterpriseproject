@@ -14,7 +14,7 @@ public interface IBreedService {
 	/**
 	 * returns a list of animals containing this string
 	 * @param string
-	 * @return
+	 * @return with a matching ID
 	 */
 
 	List<AnimalDTO> fetchAnimals(String string);
