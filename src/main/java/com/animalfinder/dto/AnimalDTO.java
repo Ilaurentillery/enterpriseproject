@@ -52,5 +52,11 @@ public class AnimalDTO {
 		this.genus = genus;
 	}
 	
+	@Override
+	public String toString() {
+		return guid + " " + breed + " " + species + " " + gender + " " + shelter + " "  + name + " " + genus;
+	}
+	
+	
 	
 }

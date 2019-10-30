@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th = "http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1"></meta>
-<title>Insert title here</title>
+<meta charset = "ISO-8859-1"/>
+<title> Animal Finder</title>
 </head>
-<h1>Welcome to Animal Finder</h1>
 <body>
-welcome to animal finder where you can select the perfect animal for you
+Welcome to Animal finder
+<br/>
+
+Your Animal is:
+
+<p th:text="${BreedDTO}"/>
+
 </body>
 </html>
