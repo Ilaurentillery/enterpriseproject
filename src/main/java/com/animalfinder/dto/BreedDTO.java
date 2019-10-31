@@ -51,6 +51,20 @@ public class BreedDTO {
 		return BreedID + " " + latitude + " " + longitude + " " + gender + " " + shelter + " " + name;
 	}
 	
+	@Override 
+	public boolean equals(Object obj) 
+	{
+		//assume they dont match
+		boolean returnValue = false;
+		if(obj instanceof BreedDTO) 
+		{
+			BreedDTO incomingBreed = (BreedDTO) obj;
+			returnValue = incomingBreed.getBreedID() == getBreedID();
+			
+		}
+		
+		return returnValue;
+	}
 	
 	
 }

@@ -18,13 +18,22 @@ public class AnimalFinderController {
 	
 	@Autowired
 	private IBreedService breedServiceStub;
+
+	@RequestMapping(value="/savebreed")
+	public String saveBreed(BreedDTO breedDTO) {
+		breedDTO.setBreedID(13);
+		return "start";
+		
+	}
 	
 	@RequestMapping("/start")
-	public String start() {
+	public String start(Model model) {
+		model.addAttribute("breedDTO", new BreedDTO());
 		return "start";
 	}
 	
-	@RequestMapping(value ="/start", method = RequestMethod.GET)
+	
+	@RequestMapping(value ="/start", method = RequestMethod.GET, params = {"loyaltySilverBreed"})
 	public String read(Model model) {
 		BreedDTO breedDTO = breedServiceStub.fetchByID(43);
 		model.addAttribute("BreedDTO", breedDTO);
@@ -42,11 +51,8 @@ public class AnimalFinderController {
 		return modelAndView;
 	}
 	
-	@RequestMapping("/animalUpload")
-	public String animalUpload() 
-	{
-		return "animalUpload";
-	}
+	
+	
 	
 	
 	
