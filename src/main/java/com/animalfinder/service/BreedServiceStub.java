@@ -16,7 +16,7 @@ public class BreedServiceStub implements IBreedService {
 		BreedDTO breedDTO = new BreedDTO();
 		breedDTO.setBreedID(43);
 		breedDTO.setLatitude("Ohio");
-		breedDTO.setLongitude("Akron");
+		breedDTO.setLongitude("Cincinnati");
 		breedDTO.setName("Wolf");
 		breedDTO.setShelter("Palms");
 		breedDTO.setGender("Male");
