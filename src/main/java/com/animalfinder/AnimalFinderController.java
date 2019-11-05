@@ -1,10 +1,13 @@
 package com.animalfinder;
 
+import java.awt.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -17,7 +20,7 @@ public class AnimalFinderController {
 
 	
 	@Autowired
-	private IBreedService breedServiceStub;
+	private IBreedService breedService;
 
 	@RequestMapping(value="/savebreed")
 	public String saveBreed(BreedDTO breedDTO) {
@@ -35,7 +38,7 @@ public class AnimalFinderController {
 	
 	@RequestMapping(value ="/start", method = RequestMethod.GET, params = {"loyaltySilverBreed"})
 	public String read(Model model) {
-		BreedDTO breedDTO = breedServiceStub.fetchByID(43);
+		BreedDTO breedDTO = breedService.fetchByID(43);
 		model.addAttribute("BreedDTO", breedDTO);
 		return "start";
 	}
@@ -44,13 +47,27 @@ public class AnimalFinderController {
 	public ModelAndView loyaltyBreed(Model model) {
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.setViewName("start");
-		BreedDTO breedDTO = breedServiceStub.fetchByID(43);
+		BreedDTO breedDTO = breedService.fetchByID(43);
 		modelAndView.addObject("breedDTO", breedDTO);
 		
 		
 		return modelAndView;
 	}
 	
+	@RequestMapping("/searchAnimal")
+	public String searchAnimal(@RequestParam(value="sea"
+			+ "rchTerm", required = false, defaultValue ="") String searchTerm) 
+	{
+		String enhancedTerm = searchTerm + "";
+		 java.util.List<AnimalDTO> fetchAnimals = breedService.fetchAnimals(searchTerm);
+		return "start";
+	}
+	
+	
+	@RequestMapping("/animalUpload")
+	public String animalUplaod(){
+		return "animalUpload";
+	}
 	
 	
 	
