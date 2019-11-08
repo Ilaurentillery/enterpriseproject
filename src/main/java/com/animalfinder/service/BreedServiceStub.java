@@ -28,15 +28,15 @@ public class BreedServiceStub implements IBreedService {
 		
 	}
 	@Override
-	public List<AnimalDTO> fetchAnimals(String searchTerm) {
+	public List<BreedDTO> fetchAnimals(String searchTerm) {
 		//stub out animal search
-		List<AnimalDTO> matchingAnimals = new ArrayList<AnimalDTO>();
+		List<BreedDTO> matchingAnimals = new ArrayList<BreedDTO>();
 		
 				
 		if(searchTerm.contains("orgi") || searchTerm.contains("anis")) {
-		AnimalDTO animal = new AnimalDTO();
-		animal.setGenus("Canis");
-		animal.setBreed("Corgi");
+		BreedDTO animal = new BreedDTO();
+		animal.setGender("Canis");
+		animal.setName("Corgi");
 		
 		matchingAnimals.add(animal);
 		

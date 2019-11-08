@@ -59,7 +59,13 @@ public class AnimalFinderController {
 			+ "rchTerm", required = false, defaultValue ="") String searchTerm) 
 	{
 		String enhancedTerm = searchTerm + "";
-		 java.util.List<AnimalDTO> fetchAnimals = breedService.fetchAnimals(searchTerm);
+		 try {
+			java.util.List<BreedDTO> fetchAnimals = breedService.fetchAnimals(searchTerm);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return "error";
+		}
 		return "start";
 	}
 	

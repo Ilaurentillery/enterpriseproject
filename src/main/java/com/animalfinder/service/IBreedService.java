@@ -17,6 +17,6 @@ public interface IBreedService {
 	 * @return
 	 */
 
-	List<AnimalDTO> fetchAnimals(String string);
+	List<BreedDTO> fetchAnimals(String string) throws Exception;
 
 }

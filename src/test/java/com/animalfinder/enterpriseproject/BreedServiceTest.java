@@ -13,6 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.animalfinder.dto.AnimalDTO;
+import com.animalfinder.dto.BreedDTO;
 import com.animalfinder.service.IBreedService;
 
 @RunWith(SpringRunner.class)
@@ -23,11 +24,11 @@ public class BreedServiceTest {
 	
 	@Autowired
 	IBreedService breedService;
-	List<AnimalDTO> animal;
+	List<BreedDTO> animal;
 	
 	
 	@Test
-	public void fetchBreed_validateNoRsultsForJunkData() {
+	public void fetchBreed_validateNoRsultsForJunkData() throws Exception {
 		givenUserISLoggedInToAnimalFinder();
 		whenTheUserSearchesFrJunk();	
 		thenAnimalFinderReturnsNoResults();
@@ -40,8 +41,8 @@ public class BreedServiceTest {
 		
 	}
 
-	private void whenTheUserSearchesFrJunk() {
-		animal = breedService.fetchAnimals("corgie");
+	private void whenTheUserSearchesFrJunk() throws Exception {
+		animal = breedService.fetchAnimals("placeholder");
 		
 	}
 
