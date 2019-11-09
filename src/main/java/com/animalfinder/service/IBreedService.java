@@ -2,7 +2,7 @@ package com.animalfinder.service;
 
 import java.util.List;
 
-import com.animalfinder.dto.AnimalDTO;
+
 import com.animalfinder.dto.BreedDTO;
 
 public interface IBreedService {

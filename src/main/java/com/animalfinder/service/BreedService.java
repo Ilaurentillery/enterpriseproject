@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.animalfinder.dao.IBreedDAO;
 import com.animalfinder.dao.IFetchDAO;
-import com.animalfinder.dto.AnimalDTO;
+
 import com.animalfinder.dto.BreedDTO;
 
 public class BreedService implements IBreedService {

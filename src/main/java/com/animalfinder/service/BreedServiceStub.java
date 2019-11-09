@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.animalfinder.dto.AnimalDTO;
 import com.animalfinder.dto.BreedDTO;
 
 @Component
