@@ -8,6 +8,9 @@ public class BreedDTO {
 	private String gender;
 	private String shelter;
 	private String name;
+	private String breed;
+	private int age;
+	private String color;
 	
 	public int getBreedID() {
 		return BreedID;
@@ -46,6 +49,24 @@ public class BreedDTO {
 		this.name = name;
 	}
 	
+	public String getBreed() {
+		return breed;
+	}
+	public void setBreed(String breed) {
+		this.breed = breed;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
 	@Override
 	public String toString() {
 		return BreedID + " " + latitude + " " + longitude + " " + gender + " " + shelter + " " + name;

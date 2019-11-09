@@ -29,7 +29,7 @@ public class BreedService implements IBreedService {
 	@Override
 	public List<BreedDTO> fetchAnimals(String string) throws Exception {
 		// TODO Auto-generated method stub
-		return breedDAO.fetch("placeholder");
+		return breedDAO.fetch("BLACKJACK");
 		
 	}
 
