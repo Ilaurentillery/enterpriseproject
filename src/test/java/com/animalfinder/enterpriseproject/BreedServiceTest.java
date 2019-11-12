@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.animalfinder.dto.AnimalDTO;
+
 import com.animalfinder.dto.BreedDTO;
 import com.animalfinder.service.IBreedService;
 
