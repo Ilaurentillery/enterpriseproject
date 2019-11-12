@@ -34,7 +34,10 @@ Your Animal is:
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-sm">Gender</span>
   </div>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name = "gender" th:field="*{gender}">
+  <select th:field="*{gender}">
+    <option th:value="'M'" th:text="Male"></option>
+    <option th:value="'F'" th:text="Female"></option>
+</select>
 </div>
 <div class="input-group input-group-sm mb-3">
   <div class="input-group-prepend">

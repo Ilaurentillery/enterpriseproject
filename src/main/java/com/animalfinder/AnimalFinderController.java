@@ -1,6 +1,6 @@
 package com.animalfinder;
 
-import java.awt.List;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,7 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+
 import org.springframework.web.servlet.ModelAndView;
 
 
@@ -55,10 +55,9 @@ public class AnimalFinderController {
 	}
 	
 	@RequestMapping("/searchAnimal")
-	public String searchAnimal(@RequestParam(value="sea"
-			+ "rchTerm", required = false, defaultValue ="") String searchTerm) 
+	public String searchAnimal(@RequestParam(value="searchTerm", required = false, defaultValue ="") String searchTerm) 
 	{
-		String enhancedTerm = searchTerm + "";
+		
 		 try {
 			java.util.List<BreedDTO> fetchAnimals = breedService.fetchAnimals(searchTerm);
 		} catch (Exception e) {
@@ -71,7 +70,7 @@ public class AnimalFinderController {
 	
 	
 	@RequestMapping("/animalUpload")
-	public String animalUplaod(){
+	public String animalUpload(){
 		return "animalUpload";
 	}
 	
