@@ -2,7 +2,7 @@ package com.animalfinder.service;
 
 import java.util.List;
 
-import com.animalfinder.dto.AnimalDTO;
+
 import com.animalfinder.dto.BreedDTO;
 
 public interface IBreedService {
@@ -17,6 +17,6 @@ public interface IBreedService {
 	 * @return
 	 */
 
-	List<AnimalDTO> fetchAnimals(String string);
+	List<BreedDTO> fetchAnimals(String string)throws Exception;
 
 }

@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.animalfinder.dto.AnimalDTO;
 import com.animalfinder.dto.BreedDTO;
 import com.animalfinder.service.IBreedService;
 
@@ -36,30 +35,18 @@ public class AnimalFinderController {
 	}
 	
 	
-	@RequestMapping(value ="/start", method = RequestMethod.GET, params = {"loyaltySilverBreed"})
-	public String read(Model model) {
-		BreedDTO breedDTO = breedService.fetchByID(43);
-		model.addAttribute("BreedDTO", breedDTO);
-		return "start";
-	}
-	
-	@RequestMapping(value ="/start", method = RequestMethod.GET, params = {"loyaltyBreed"})
-	public ModelAndView loyaltyBreed(Model model) {
-		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("start");
-		BreedDTO breedDTO = breedService.fetchByID(43);
-		modelAndView.addObject("breedDTO", breedDTO);
-		
-		
-		return modelAndView;
-	}
 	
 	@RequestMapping("/searchAnimal")
-	public String searchAnimal(@RequestParam(value="sea"
-			+ "rchTerm", required = false, defaultValue ="") String searchTerm) 
+	public String searchAnimal(@RequestParam(value="searchTerm", required = false, defaultValue ="") String searchTerm) 
 	{
 		String enhancedTerm = searchTerm + "";
-		 java.util.List<AnimalDTO> fetchAnimals = breedService.fetchAnimals(searchTerm);
+		 try {
+			java.util.List<BreedDTO> fetchAnimals = breedService.fetchAnimals(searchTerm);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return "error";
+		}
 		return "start";
 	}
 	

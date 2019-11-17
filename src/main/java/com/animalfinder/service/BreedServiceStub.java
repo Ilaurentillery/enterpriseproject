@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.animalfinder.dto.AnimalDTO;
 import com.animalfinder.dto.BreedDTO;
 
 @Component
@@ -15,8 +14,8 @@ public class BreedServiceStub implements IBreedService {
 	public BreedDTO fetchByID(int id) {
 		BreedDTO breedDTO = new BreedDTO();
 		breedDTO.setBreedID(43);
-		breedDTO.setLatitude("Ohio");
-		breedDTO.setLongitude("Cincinnati");
+		breedDTO.setLatitude(12.5);
+		breedDTO.setLongitude(30.2);
 		breedDTO.setName("Wolf");
 		breedDTO.setShelter("Palms");
 		breedDTO.setGender("Male");
@@ -28,15 +27,15 @@ public class BreedServiceStub implements IBreedService {
 		
 	}
 	@Override
-	public List<AnimalDTO> fetchAnimals(String searchTerm) {
+	public List<BreedDTO> fetchAnimals(String searchTerm) {
 		//stub out animal search
-		List<AnimalDTO> matchingAnimals = new ArrayList<AnimalDTO>();
+		List<BreedDTO> matchingAnimals = new ArrayList<BreedDTO>();
 		
 				
-		if(searchTerm.contains("orgi") || searchTerm.contains("anis")) {
-		AnimalDTO animal = new AnimalDTO();
-		animal.setGenus("Canis");
-		animal.setBreed("Corgi");
+		if(searchTerm.contains("corgi") || searchTerm.contains("dog")) {
+		BreedDTO animal = new BreedDTO();
+		animal.setBreedID(11);
+		animal.setLatitude(30.2);
 		
 		matchingAnimals.add(animal);
 		

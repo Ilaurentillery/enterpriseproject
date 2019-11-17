@@ -3,8 +3,8 @@ package com.animalfinder.dto;
 public class BreedDTO {
 
 	private int BreedID;
-	private String latitude;
-	private String longitude;
+	private double latitude;
+	private double longitude;
 	private String gender;
 	private String shelter;
 	private String name;
@@ -15,16 +15,16 @@ public class BreedDTO {
 	public void setBreedID(int sbreedID) {
 		this.BreedID = sbreedID;
 	}
-	public String getLatitude() {
+	public double getLatitude() {
 		return latitude;
 	}
-	public void setLatitude(String latitude) {
+	public void setLatitude(double latitude) {
 		this.latitude = latitude;
 	}
-	public String getLongitude() {
+	public double getLongitude() {
 		return longitude;
 	}
-	public void setLongitude(String longitude) {
+	public void setLongitude(double longitude) {
 		this.longitude = longitude;
 	}
 	public String getGender() {
