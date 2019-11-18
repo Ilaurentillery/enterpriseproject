@@ -55,8 +55,7 @@ public class AnimalFinderController {
 	}
 	
 	@RequestMapping("/searchAnimal")
-	public String searchAnimal(@RequestParam(value="sea"
-			+ "rchTerm", required = false, defaultValue ="") String searchTerm) 
+	public String searchAnimal(@RequestParam(value="searchTerm", required = false, defaultValue ="") String searchTerm) 
 	{
 		String enhancedTerm = searchTerm + "";
 		 java.util.List<AnimalDTO> fetchAnimals = breedService.fetchAnimals(searchTerm);
@@ -65,7 +64,7 @@ public class AnimalFinderController {
 	
 	
 	@RequestMapping("/animalUpload")
-	public String animalUplaod(){
+	public String animalUpload(){
 		return "animalUpload";
 	}
 	
