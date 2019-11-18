@@ -1,19 +1,35 @@
 package com.animalfinder.dto;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class BreedDTO {
 
-	private int BreedID;
+	@SerializedName("breedID")
+	@Expose
+	private int breedID;
+	@SerializedName("latitude")
+	@Expose
 	private double latitude;
+	@SerializedName("longitude")
+	@Expose
 	private double longitude;
+	@SerializedName("gender")
+	@Expose
 	private String gender;
+	@SerializedName("shelter")
+	@Expose
 	private String shelter;
+	@SerializedName("name")
+	@Expose
 	private String name;
 	
+	
 	public int getBreedID() {
-		return BreedID;
+		return breedID;
 	}
 	public void setBreedID(int sbreedID) {
-		this.BreedID = sbreedID;
+		this.breedID = sbreedID;
 	}
 	public double getLatitude() {
 		return latitude;
@@ -48,7 +64,7 @@ public class BreedDTO {
 	
 	@Override
 	public String toString() {
-		return BreedID + " " + latitude + " " + longitude + " " + gender + " " + shelter + " " + name;
+		return breedID + " " + latitude + " " + longitude + " " + gender + " " + shelter + " " + name;
 	}
 	
 	@Override 
