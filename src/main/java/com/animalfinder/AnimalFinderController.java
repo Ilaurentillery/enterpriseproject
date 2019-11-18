@@ -64,7 +64,7 @@ public class AnimalFinderController {
 	
 	
 	@RequestMapping("/animalUpload")
-	public String animalUplaod(){
+	public String animalUpload(){
 		return "animalUpload";
 	}
 	
