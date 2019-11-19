@@ -27,9 +27,9 @@ public class BreedService implements IBreedService {
 	}
 
 	@Override
-	public List<BreedDTO> fetchAnimals(String string) throws Exception {
+	public List<BreedDTO> fetchAnimals(String searchTerm) throws Exception {
 		// TODO Auto-generated method stub
-		return animalDAO.fetch("corgi");
+		return animalDAO.fetch(searchTerm );
 		
 	}
 

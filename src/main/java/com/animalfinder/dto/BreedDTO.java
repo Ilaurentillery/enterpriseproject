@@ -3,6 +3,8 @@ package com.animalfinder.dto;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import net.bytebuddy.implementation.ToStringMethod;
+
 public class BreedDTO {
 
 	@SerializedName("breedID")
@@ -61,6 +63,7 @@ public class BreedDTO {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	
 	@Override
 	public String toString() {

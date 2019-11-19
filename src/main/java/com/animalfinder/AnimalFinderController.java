@@ -1,6 +1,7 @@
 package com.animalfinder;
 
 import java.awt.List;
+import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -37,17 +38,20 @@ public class AnimalFinderController {
 	
 	
 	@RequestMapping("/searchAnimal")
-	public String searchAnimal(@RequestParam(value="searchTerm", required = false, defaultValue ="") String searchTerm) 
+	public ModelAndView searchAnimal(@RequestParam(value="searchTerm", required = false, defaultValue ="") String searchTerm) 
 	{
-		String enhancedTerm = searchTerm + "";
+		ModelAndView modelAndView = new ModelAndView();
+		java.util.List<BreedDTO> animals = new ArrayList<BreedDTO>();
 		 try {
-			java.util.List<BreedDTO> fetchAnimals = breedService.fetchAnimals(searchTerm);
+			animals = breedService.fetchAnimals(searchTerm);
+			modelAndView.setViewName("animalResults");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			return "error";
+			modelAndView.setViewName("error"); 
 		}
-		return "start";
+		 modelAndView.addObject("animals", animals);
+		return modelAndView;
 	}
 	
 	

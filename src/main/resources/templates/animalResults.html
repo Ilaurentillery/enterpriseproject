@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+<meta charset = "ISO-8859-1"/>
+<title> Animal Finder</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div th:replace = "fragments/topnav :: navbar">
+</div>
+<!-- 15:40 of thymleaf video needs to be used once we get a working json file -->
+<br/>
+<div class = "list-group" th:each = "animal : ${animals}">
+	<a href = "#" class = "list-group-item list-group-item active">
+	<p th:text = "${animals}"/>
+	</a>
+</div>
+
+
+</body>
+</html>
