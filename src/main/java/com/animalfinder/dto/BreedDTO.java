@@ -10,12 +10,12 @@ public class BreedDTO {
 	@SerializedName("breedID")
 	@Expose
 	private int breedID;
-	@SerializedName("latitude")
+	@SerializedName("size")
 	@Expose
-	private double latitude;
-	@SerializedName("longitude")
+	private String size;
+	@SerializedName("age")
 	@Expose
-	private double longitude;
+	private int age;
 	@SerializedName("gender")
 	@Expose
 	private String gender;
@@ -33,18 +33,8 @@ public class BreedDTO {
 	public void setBreedID(int sbreedID) {
 		this.breedID = sbreedID;
 	}
-	public double getLatitude() {
-		return latitude;
-	}
-	public void setLatitude(double latitude) {
-		this.latitude = latitude;
-	}
-	public double getLongitude() {
-		return longitude;
-	}
-	public void setLongitude(double longitude) {
-		this.longitude = longitude;
-	}
+	
+	
 	public String getGender() {
 		return gender;
 	}
@@ -65,9 +55,21 @@ public class BreedDTO {
 	}
 	
 	
+	public String getSize() {
+		return size;
+	}
+	public void setSize(String size) {
+		this.size = size;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
 	@Override
 	public String toString() {
-		return breedID + " " + latitude + " " + longitude + " " + gender + " " + shelter + " " + name;
+		return breedID + " "  + " "  + age + " " + size + " " + gender + " " + shelter + " " + name;
 	}
 	
 	@Override 

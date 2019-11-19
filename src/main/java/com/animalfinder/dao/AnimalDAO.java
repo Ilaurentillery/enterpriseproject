@@ -37,17 +37,18 @@ public class AnimalDAO implements IAnimalDAO {
 			//Animal object that will be populated with the json
 			BreedDTO breed = new BreedDTO();
 			int BreedID = jsonAnimal.getInt("BreedID");
-			double latitude = jsonAnimal.getDouble("latitude");
-			double longitude = jsonAnimal.getDouble("longitude");
+			int age = jsonAnimal.getInt("age");
+			String size = jsonAnimal.getString("size");
 			String shelter = jsonAnimal.getString("shelter");
 			String gender = jsonAnimal.getString("gender");
 			String name = jsonAnimal.getString("name");
 			
+			
 			//populate DTO
 			
+			breed.setAge(age);
+			
 			breed.setBreedID(BreedID);
-			breed.setLatitude(latitude);
-			breed.setLongitude(longitude);
 			breed.setGender(gender);
 			breed.setShelter(shelter);
 			breed.setName(name);
