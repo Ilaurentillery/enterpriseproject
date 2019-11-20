@@ -5,12 +5,18 @@
 <title> Animal Finder</title>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+	#container{
+	    width: 100%;
+    	padding: 5em;
+	}
+</style>
 </head>
 <body>
 
 <div th:replace = "fragments/topnav :: navbar">
 </div>
-
+<div id="container">
 <br/>
 Your Animal is:
 
@@ -51,6 +57,6 @@ Your Animal is:
  
 <button name="submit" type="submit" value="0">Submit</button>
 </form>
-
+</div>
 </body>
 </html>
