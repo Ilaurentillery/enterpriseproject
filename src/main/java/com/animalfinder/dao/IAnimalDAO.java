@@ -1,11 +1,10 @@
 package com.animalfinder.dao;
 
-import java.util.List;
-
-import com.animalfinder.dto.BreedDTO;
+import com.animalfinder.dto.AnimalDTO;
 
 public interface IAnimalDAO {
-
-	List<BreedDTO> fetch(String searchFilter) throws Exception;
+	
+	boolean save(AnimalDTO animalDTO) throws Exception;
+	
 
 }

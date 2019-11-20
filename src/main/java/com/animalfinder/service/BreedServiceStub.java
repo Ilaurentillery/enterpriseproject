@@ -14,10 +14,9 @@ public class BreedServiceStub implements IBreedService {
 	public BreedDTO fetchByID(int id) {
 		BreedDTO breedDTO = new BreedDTO();
 		breedDTO.setBreedID(43);
-		breedDTO.setLatitude(12.5);
-		breedDTO.setLongitude(30.2);
 		breedDTO.setName("Wolf");
 		breedDTO.setShelter("Palms");
+		breedDTO.setSize("Small");
 		breedDTO.setGender("Male");
 		
 		return breedDTO;
@@ -27,7 +26,7 @@ public class BreedServiceStub implements IBreedService {
 		
 	}
 	@Override
-	public List<BreedDTO> fetchAnimals(String searchTerm) {
+	public List<BreedDTO> fetchBreed(String searchTerm) {
 		//stub out animal search
 		List<BreedDTO> matchingAnimals = new ArrayList<BreedDTO>();
 		
@@ -35,7 +34,6 @@ public class BreedServiceStub implements IBreedService {
 		if(searchTerm.contains("corgi") || searchTerm.contains("dog")) {
 		BreedDTO animal = new BreedDTO();
 		animal.setBreedID(11);
-		animal.setLatitude(30.2);
 		
 		matchingAnimals.add(animal);
 		

@@ -2,21 +2,23 @@ package com.animalfinder.service;
 
 import java.util.List;
 
-
+import com.animalfinder.dto.AnimalDTO;
 import com.animalfinder.dto.BreedDTO;
 
 public interface IBreedService {
 
-	BreedDTO fetchByID(int id);
+	AnimalDTO fetchByID(int id);
 
-	void save(BreedDTO breedDTO);
+	void save(AnimalDTO animalDTO) throws Exception;
 	
 	/**
 	 * returns a list of animals containing this string
 	 * @param string
 	 * @return
 	 */
+	
+	
 
-	List<BreedDTO> fetchAnimals(String string)throws Exception;
+	List<BreedDTO> fetchBreed(String string)throws Exception;
 
 }

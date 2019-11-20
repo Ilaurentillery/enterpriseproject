@@ -42,7 +42,7 @@ public class BreedServiceTest {
 
 	private void whenTheUserSearchesFrJunk() {
 		try {
-			animal = breedService.fetchAnimals("corgie");
+			animal = breedService.fetchBreed("corgie");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

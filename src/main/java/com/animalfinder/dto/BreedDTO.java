@@ -3,25 +3,21 @@ package com.animalfinder.dto;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import net.bytebuddy.implementation.ToStringMethod;
-
 public class BreedDTO {
 
 	@SerializedName("breedID")
 	@Expose
 	private int breedID;
-	@SerializedName("latitude")
-	@Expose
-	private double latitude;
-	@SerializedName("longitude")
-	@Expose
-	private double longitude;
 	@SerializedName("gender")
 	@Expose
 	private String gender;
 	@SerializedName("shelter")
 	@Expose
 	private String shelter;
+	@SerializedName("size")
+	@Expose
+	private String size;
+
 	@SerializedName("name")
 	@Expose
 	private String name;
@@ -32,18 +28,6 @@ public class BreedDTO {
 	}
 	public void setBreedID(int sbreedID) {
 		this.breedID = sbreedID;
-	}
-	public double getLatitude() {
-		return latitude;
-	}
-	public void setLatitude(double latitude) {
-		this.latitude = latitude;
-	}
-	public double getLongitude() {
-		return longitude;
-	}
-	public void setLongitude(double longitude) {
-		this.longitude = longitude;
 	}
 	public String getGender() {
 		return gender;
@@ -57,6 +41,13 @@ public class BreedDTO {
 	public void setShelter(String shelter) {
 		this.shelter = shelter;
 	}
+
+	public String getSize() {
+		return size;
+	}
+	public void setSize(String size) {
+		this.size = size;
+	}
 	public String getName() {
 		return name;
 	}
@@ -67,7 +58,7 @@ public class BreedDTO {
 	
 	@Override
 	public String toString() {
-		return breedID + " " + latitude + " " + longitude + " " + gender + " " + shelter + " " + name;
+		return breedID + " " + gender + " " + shelter + " " + size + " " + name;
 	}
 	
 	@Override 
