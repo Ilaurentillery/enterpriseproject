@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html xmlns:th="http://wwww.thymeleaf.org">
 <head>
+
 	<meta charset="ISO-8859-1"></meta>
+	
 	<title>Animal Upload Page</title>
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="styles.css">
+	<style>
+		#container{
+			width: 100%;
+			padding: 5em;
+		}
+		#defaultImg{
+			width: 23%;
+			margin-left: 21em;
+		}
+		#uploadForm{
+			float: left;
+		}
+	</style>
 </head>
 <body>
 	<div th:replace = "fragments/topnav :: navbar">
@@ -15,19 +29,19 @@
 		<br/>
 		<p>Please feel free to upload information on<br/>Animals not listed on our site who could use a<br/>new home!</p>
 		<form id="uploadForm" onsubmit="">
-			<label class="animalLbl">Name</label>
+			<label class="animalLbl">Name:</label>
 			<input type="text" class="animalTrait"><br/>
-			<label class="animalLbl">Type</label>
+			<label class="animalLbl">Type:</label>
 			<input type="text" class="animalTrait"><br/>
-			<label class="animalLbl">Age</label>
+			<label class="animalLbl">Age:</label>
 			<input type="text" class="animalTrait"><br/>
-			<label class="animalLbl">Location</label>
+			<label class="animalLbl">Location:</label>
 			<input type="text" class="animalTrait"><br/>
 			<input type="submit" value="Submit" class="button" id="animalUploadSub">
 		</form>
 		
-		<img src="" alt="default image" id="defaultImg">
-		<input type="button" id="imageUploadBtn" class="button">
+		<img src="https://atasouthport.com/wp-content/uploads/2017/04/default-image.jpg" alt="default image" id="defaultImg">
+		<input type="button" id="imageUploadBtn" class="button" value="Upload Image">
 		
 	</div>
 </body>
