@@ -5,24 +5,25 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
+import com.animalfinder.dto.AnimalDTO;
 import com.animalfinder.dto.BreedDTO;
 
 @Component
 public class BreedServiceStub implements IBreedService {
 
 	@Override
-	public BreedDTO fetchByID(int id) {
-		BreedDTO breedDTO = new BreedDTO();
-		breedDTO.setBreedID(43);
-		breedDTO.setName("Wolf");
-		breedDTO.setShelter("Palms");
-		breedDTO.setSize("Small");
-		breedDTO.setGender("Male");
+	public AnimalDTO fetchByID(int id) {
+		AnimalDTO animalDTO = new AnimalDTO();
+		animalDTO.setBreedID(43);
+		animalDTO.setName("Wolf");
+		animalDTO.setShelter("Palms");
+		animalDTO.setSize("Small");
+		animalDTO.setGender("Male");
 		
-		return breedDTO;
+		return animalDTO;
 	}
 	@Override
-	public void save(BreedDTO breedDTO) {
+	public void save(AnimalDTO animalDTO) throws Exception{
 		
 	}
 	@Override
