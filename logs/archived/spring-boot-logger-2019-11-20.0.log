@@ -1,0 +1,66 @@
+2019-11-20 09:25:04,355 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplicationTests on DESKTOP-099UQRG with PID 10500 (started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 09:25:04,356 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 09:25:04,363 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 09:25:13,857 INFO org.springframework.boot.StartupInfoLogger [main] Started EnterpriseprojectApplicationTests in 10.367 seconds (JVM running for 12.312)
+2019-11-20 10:15:09,254 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplicationTests on DESKTOP-099UQRG with PID 8728 (started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 10:15:09,254 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 10:15:09,254 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 10:15:15,613 INFO org.springframework.boot.StartupInfoLogger [main] Started EnterpriseprojectApplicationTests in 6.781 seconds (JVM running for 9.642)
+2019-11-20 11:03:32,519 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplicationTests on DESKTOP-099UQRG with PID 5420 (started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 11:03:32,519 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 11:03:32,535 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 11:03:38,676 INFO org.springframework.boot.StartupInfoLogger [main] Started EnterpriseprojectApplicationTests in 6.563 seconds (JVM running for 7.625)
+2019-11-20 12:03:30,711 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 812 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:03:30,790 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:03:30,790 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 12:04:56,701 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 11232 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:04:56,701 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:04:56,701 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 12:10:21,358 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 588 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:10:21,358 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:10:21,358 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 12:29:46,351 INFO org.springframework.boot.StartupInfoLogger [main] Starting BreedServiceTest on DESKTOP-099UQRG with PID 9868 (started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:29:46,351 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:29:46,351 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 12:29:56,032 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 8472 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:29:56,032 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:29:56,032 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 12:31:03,893 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 9512 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:31:03,893 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:31:03,893 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 12:32:19,118 INFO org.springframework.boot.StartupInfoLogger [main] Starting BreedServiceTest on DESKTOP-099UQRG with PID 368 (started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:32:19,118 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:32:19,134 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 12:38:38,174 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplicationTests on DESKTOP-099UQRG with PID 5136 (started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:38:38,174 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:38:38,174 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 12:38:48,549 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 9860 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:38:48,572 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:38:48,575 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 12:46:03,485 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 7096 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:46:03,485 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:46:03,500 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 12:47:02,625 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 7828 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:47:02,625 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:47:02,625 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 12:47:55,572 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 8304 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:47:55,587 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:47:55,587 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 12:51:54,193 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 9396 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:51:54,193 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:51:54,193 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 12:53:32,691 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 8308 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:53:32,691 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:53:32,691 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 12:54:30,823 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 2676 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 12:54:30,823 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 12:54:30,823 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 14:56:32,896 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 8504 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 14:56:32,898 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 14:56:32,902 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 14:59:19,265 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 7572 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 14:59:19,267 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 14:59:19,268 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-11-20 15:07:02,218 INFO org.springframework.boot.StartupInfoLogger [main] Starting EnterpriseprojectApplication on DESKTOP-099UQRG with PID 6224 (C:\Users\Administrator\git\FinalEnterpriseProject\target\classes started by Administrator in C:\Users\Administrator\git\FinalEnterpriseProject)
+2019-11-20 15:07:02,226 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-20 15:07:02,228 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
