@@ -1,17 +1,15 @@
 package com.animalfinder;
 
-import java.awt.List;
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.animalfinder.dto.AnimalDTO;
 import com.animalfinder.dto.BreedDTO;
 import com.animalfinder.service.IBreedService;
 
@@ -28,8 +26,21 @@ public class AnimalFinderController {
 	private IBreedService breedService;
 
 	@RequestMapping(value="/savebreed")
-	public String saveBreed(BreedDTO breedDTO) {
-		breedDTO.setBreedID(13);
+	public String saveBreed(AnimalDTO animalDTO) {
+		animalDTO.setBreedID(13);
+		animalDTO.setGender("Male");
+		animalDTO.setName("Charles");
+		animalDTO.setShelter("Cinci Shelter");
+		animalDTO.setSize("Small");
+		
+		try {
+			breedService.save(animalDTO);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			log.error("unable to save animal", e);
+			e.printStackTrace();
+			return "error";
+		}
 		return "start";
 		
 	}
@@ -50,7 +61,7 @@ public class AnimalFinderController {
 		ModelAndView modelAndView = new ModelAndView();
 		java.util.List<BreedDTO> animals = new ArrayList<BreedDTO>();
 		 try {
-			animals = breedService.fetchAnimals(searchTerm);
+			animals = breedService.fetchBreed(searchTerm);
 			modelAndView.setViewName("animalResults");
 			if(animals.size() == 0) {
 				log.warn("array size is 0 for searched animal", searchTerm);

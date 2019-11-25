@@ -1,4 +1,5 @@
 package com.animalfinder.dao;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,20 +8,17 @@ import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.animalfinder.dto.AnimalDTO;
 import com.animalfinder.dto.BreedDTO;
-import com.animalfinder.dto.BreedList;
-
-import retrofit2.Call;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 @Component
 public class AnimalDAO implements IAnimalDAO {
 	
 	@Autowired
-	NetworkDAO networkDAO;
+	AnimalRepository animalRepository;
 	
+	@Autowired
+	NetworkDAO networkDAO;
 	
 	public List<BreedDTO> fetchManual(String searchFilter) throws Exception{
 		
@@ -60,26 +58,13 @@ public class AnimalDAO implements IAnimalDAO {
 		
 	}
 
+
 	@Override
-	public List<BreedDTO> fetch(String searchFilter) throws Exception {
+	public boolean save(AnimalDTO animalDTO) throws Exception {
 		// TODO Auto-generated method stub
-		Retrofit retrofit = new Retrofit.Builder().baseUrl("http://NeedToMakeJSONData.com")
-				.addConverterFactory(GsonConverterFactory.create())
-				.build();
+		animalRepository.save(animalDTO);
 		
-		GetAnimals getAnimals = retrofit.create(GetAnimals.class);
-		
-		Call<BreedList> allAnimals = getAnimals.getAllAnimals(searchFilter);
-		
-		Response<BreedList> execute = allAnimals.execute();
-		
-		BreedList animalList = execute.body();
-		
-		List<BreedDTO> animals = animalList.getAnimals();
-		
-		return animals;
-		
+		return false;
 	}
-	
 
 }

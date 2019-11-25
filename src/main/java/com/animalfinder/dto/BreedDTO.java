@@ -1,27 +1,33 @@
 package com.animalfinder.dto;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import net.bytebuddy.implementation.ToStringMethod;
 
 public class BreedDTO {
 
 	@SerializedName("breedID")
 	@Expose
 	private int breedID;
-	@SerializedName("size")
-	@Expose
-	private String size;
+
+	
 	@SerializedName("age")
 	@Expose
 	private int age;
+
 	@SerializedName("gender")
 	@Expose
 	private String gender;
 	@SerializedName("shelter")
 	@Expose
 	private String shelter;
+	@SerializedName("size")
+	@Expose
+	private String size;
+
 	@SerializedName("name")
 	@Expose
 	private String name;
@@ -33,8 +39,7 @@ public class BreedDTO {
 	public void setBreedID(int sbreedID) {
 		this.breedID = sbreedID;
 	}
-	
-	
+
 	public String getGender() {
 		return gender;
 	}
@@ -47,6 +52,13 @@ public class BreedDTO {
 	public void setShelter(String shelter) {
 		this.shelter = shelter;
 	}
+
+	public String getSize() {
+		return size;
+	}
+	public void setSize(String size) {
+		this.size = size;
+	}
 	public String getName() {
 		return name;
 	}
@@ -55,12 +67,7 @@ public class BreedDTO {
 	}
 	
 	
-	public String getSize() {
-		return size;
-	}
-	public void setSize(String size) {
-		this.size = size;
-	}
+	
 	public int getAge() {
 		return age;
 	}
@@ -69,7 +76,10 @@ public class BreedDTO {
 	}
 	@Override
 	public String toString() {
+
 		return breedID + " "  + " "  + age + " " + size + " " + gender + " " + shelter + " " + name;
+
+
 	}
 	
 	@Override 

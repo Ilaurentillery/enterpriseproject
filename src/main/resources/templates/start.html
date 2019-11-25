@@ -14,11 +14,20 @@
 <br/>
 Your Animal is:
 
-<p th:text="${breedDTO}"/>
+<p th:text="${AnimalDTO}"/>
 
-<form action="#" th:action="@{/savebreed}" th:object="${breedDTO}" method = "GET">
+<form action="#" th:action="@{/savebreed}" th:object="${AnimalDTO}" method = "GET">
 
+<<<<<<< HEAD
 
+=======
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">breedID</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name = "breedID" th:field="*{breedID}">
+</div>
+>>>>>>> refs/remotes/origin/master
 <div class="input-group input-group-sm mb-3">
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-sm">Gender</span>
@@ -42,6 +51,12 @@ Your Animal is:
     <span class="input-group-text" id="inputGroup-sizing-sm">Shelter</span>
   </div>
   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name = "shelter" th:field="*{shelter}">
+</div>
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Size</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" name = "size" th:field="*{size}">
 </div>
 <div class="input-group input-group-sm mb-3">
   <div class="input-group-prepend">

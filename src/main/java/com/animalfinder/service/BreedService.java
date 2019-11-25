@@ -6,30 +6,37 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.animalfinder.dao.IAnimalDAO;
+import com.animalfinder.dao.IBreedDAO;
+import com.animalfinder.dto.AnimalDTO;
 import com.animalfinder.dto.BreedDTO;
 
 @Component
 public class BreedService implements IBreedService {
 
 	@Autowired
+	IBreedDAO breedDAO;
+	
+	@Autowired
 	IAnimalDAO animalDAO;
 	
 	@Override
-	public BreedDTO fetchByID(int id) {
+	public AnimalDTO fetchByID(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void save(BreedDTO breedDTO) {
+	public void save(AnimalDTO animalDTO) throws Exception {
+		
+		animalDAO.save(animalDTO);
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public List<BreedDTO> fetchAnimals(String searchTerm) throws Exception {
+	public List<BreedDTO> fetchBreed(String searchTerm) throws Exception {
 		// TODO Auto-generated method stub
-		return animalDAO.fetch(searchTerm );
+		return breedDAO.fetch("Oak");
 		
 	}
 
